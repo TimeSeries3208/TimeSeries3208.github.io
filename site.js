@@ -59,8 +59,8 @@ $.extend($.easing,
         navItems.each(function(){
             var scrollID = $(this).attr('href').substring(1);
             navs[scrollID] = (settings.activateParentNode)? this.parentNode : this;
-            // sections[scrollID] = $(document.getElementById(scrollID)).offset().top;
-            sections[scrollID] = $(document.getElementById(scrollID));
+            sections[scrollID] = $(document.getElementById(scrollID)).offset().top;
+            // sections[scrollID] = $(document.getElementById(scrollID));
         });
     }
 
@@ -77,7 +77,8 @@ $(document).ready(function (){
 
     //section divider icon click gently scrolls to reveal the section
 	$(".sectiondivider").on('click', function(event) {
-    	$('html,body').animate({scrollTop: $(event.target.parentNode).offset().top - 50}, 400, "linear");
+    	// $('html,body').animate({scrollTop: $(event.target.parentNode).offset().top - 50}, 400, "linear");
+        $('html,body').animate({scrollTop: $(event.target.parentNode).offset()}, 400, "linear");
 	});
 
     //links going to other sections nicely scroll

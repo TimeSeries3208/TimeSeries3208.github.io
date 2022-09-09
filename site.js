@@ -78,7 +78,6 @@ $(document).ready(function (){
     //section divider icon click gently scrolls to reveal the section
 	$(".sectiondivider").on('click', function(event) {
     	$('html,body').animate({scrollTop: $(event.target.parentNode).offset().top - 50}, 400, "linear");
-        // $('html,body').animate({scrollTop: $(event.target.parentNode).offset()}, 400, "linear");
 	});
 
     //links going to other sections nicely scroll
@@ -87,9 +86,8 @@ $(document).ready(function (){
             $(this).on('click', function(event) {
         		event.preventDefault();
                 var target = $(event.target).closest("a");
-                // var targetHight =  $(target.attr("href")).offset().top
-                var targetHight =  $(target.attr("href"))
-            	$('html,body').animate({scrollTop: targetHight - 20}, 800, "easeInOutExpo");
+                var targetHight =  $(target.attr("href")).offset().top
+            	$('html,body').animate({scrollTop: targetHight - 17000}, 800, "easeInOutExpo"); 
             });
         }
 	});

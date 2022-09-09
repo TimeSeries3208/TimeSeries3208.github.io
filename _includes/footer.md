@@ -1,8 +1,7 @@
 
 
-Design by Tim O'Brien [t413.com](http://t413.com/)
+Design by Nethmi Herath
 &mdash;
-[SinglePaged theme](https://github.com/t413/SinglePaged)
+Copyright 2022
 &mdash;
-this site is [open source]({{ site.source_link }})
 

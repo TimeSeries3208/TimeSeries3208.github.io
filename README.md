@@ -1,1 +1,1 @@
-Fancy jekyll powered single page site
+Timeseries 3208 Website - RUSL 2022
